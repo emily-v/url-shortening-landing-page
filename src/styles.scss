@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "stylings/reset";
+@import "stylings/variables";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+html {
+    font-family: $default-font-family;
+    font-size: $default-font-size;
+}
+
+body {
+    padding: $gutter-vertical $gutter-horizontal;
+    // width: (100 - ($gutter-horizontal * 2)) / 100%;
+    width: 100%;
+}

@@ -1,0 +1,24 @@
+<header>
+    <img
+      class="logo-img"
+      src="././assets/images/logo.svg"
+      alt="Shortly"
+    />
+    <img
+      class="menu-icon"
+      src="././assets/images/hamburger.png"
+      alt="expand menu"
+      (click)="toggleNav()"
+    />
+    <nav class="mobile-nav" *ngIf="showNav">
+      <ul class="nav-list">
+        <li class="nav-item">Features</li>
+        <li class="nav-item">Pricing</li>
+        <li class="nav-item">Resources</li>
+      </ul>
+      <span class="login-options">
+        <span>Login</span>
+        <button class="button-pill">Sign Up</button>
+      </span>
+    </nav>
+  </header>

@@ -1,5 +1,29 @@
 @import "../stylings/variables";
 
+
+// -- DEFAULT / MOBILE STYLES -- 
+@for $i from 1 through 12 {
+    $w: ($i / 12) * 100%;
+    .col-#{$i}-sm {
+        width: $w; 
+        float: left;
+        border: 1px solid red;
+    }
+}
+
 .hero-img {
     width: 100%;
+}
+
+// -- DESKTOP STYLES --
+@media only screen and (min-width: 600px) {
+    @for $i from 1 through 12 {
+        $w: ($i / 12) * 100%;
+        .col-#{$i}-lg {
+            width: $w; 
+            float: left;
+            border: 1px solid blue;
+        }
+    }
+
 }

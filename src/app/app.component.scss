@@ -19,7 +19,83 @@
 
 .hero-img {
     width: 130%;
+}
+
+.main-content {
+    padding: $gutter-vertical $gutter-horizontal;
+    text-align: center;
+    // background: $bg-lt;
     
+    .title-dk {
+        font-weight: $heavy;
+        color: $heading-color-dk;
+        margin: $default-font-size auto;
+    }
+
+    .text-content {
+        color: $text-color-dk;
+        line-height: 1.75em;
+    }
+
+    .btn-pill {
+        @include btn(1.5em, 50%);
+    }
+    
+}
+
+.hero-description {
+    margin-bottom: 4em;
+
+    .title-dk {
+        font-size: 2em;
+        line-height: 1.25em;
+    }
+    
+    .text-content {
+        margin-bottom: 1em;
+    }
+}
+
+.shorten-section {
+    background-image: url("../assets/images/bg-shorten-mobile.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    // background-size: contain;
+    background-color: $bg-dk;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1.5em;
+
+    %shorten-element {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        font-family: $default-font-family;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        
+    }
+    
+    .url-input {
+        @extend %shorten-element;
+        margin-top: 0;
+        margin-bottom: 1em;
+        padding-left: 5%;
+    }
+
+    .btn-square {
+        @extend %shorten-element;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: $text-color-lt;
+        background-color: $btn-primary;
+    }
 }
 
 

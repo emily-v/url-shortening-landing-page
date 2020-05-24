@@ -30,7 +30,7 @@ header {
         margin-top: 1em;
 
         .btn-pill {
-            @include btn(20px, 90%);
+            @include btn(1.5em, 90%);
             margin-top: 1em;
         }
     }

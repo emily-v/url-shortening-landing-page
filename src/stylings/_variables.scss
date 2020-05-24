@@ -5,16 +5,18 @@ $dark-violet: hsl(257, 27%, 26%);
 $red: hsl(0, 87%, 67%);
 $gray: hsl(0, 0%, 75%);
 $grayish-violet: hsl(257, 7%, 63%);
+$light-violet: 	hsl(225, 33%, 95%);
 $very-dark-blue: hsl(255, 11%, 22%);
 $very-dark-violet: hsl(260, 8%, 14%);
 $white: #fff;
 
 $heading-color-dk: $very-dark-blue;
 $heading-color-lt: $white;
-$text-color-dk: $gray;
+$text-color-dk: $grayish-violet;
 $text-color-lt: $white;
 $nav-secondary: $grayish-violet;
 $bg-dk: $dark-violet;
+$bg-lt: $light-violet;
 $bg-footer: $very-dark-violet;
 $btn-primary: $cyan;
 
@@ -29,7 +31,8 @@ $gutter-vertical: 8%;
 @mixin btn($br, $w) {
     display: block;
     margin: 0 auto;
-    padding: .5em 2em;
+    padding: .6em 1.5em;
+    border: none;
     color: $text-color-lt;
     background: $btn-primary;
     font-size: inherit;

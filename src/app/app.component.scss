@@ -11,9 +11,17 @@
     }
 }
 
-.hero-img {
-    width: 100%;
+.hero-img-container {
+    width: 100% - $gutter-horizontal;
+    overflow: hidden;
+    padding: 0 0 0 $gutter-horizontal;
 }
+
+.hero-img {
+    width: 130%;
+    
+}
+
 
 // -- DESKTOP STYLES --
 @media only screen and (min-width: 600px) {

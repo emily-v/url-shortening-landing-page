@@ -16,11 +16,24 @@ $text-color-lt: $white;
 $nav-secondary: $grayish-violet;
 $bg-dk: $dark-violet;
 $bg-footer: $very-dark-violet;
+$btn-primary: $cyan;
 
 $default-font-size: 18px;
 $default-font-family: 'Poppins', sans-serif;
 $normal: 500;
 $heavy: 700;
 
-$gutter-horizontal: 2%;
-$gutter-vertical: 4%;
+$gutter-horizontal: 5%;
+$gutter-vertical: 8%;
+
+@mixin btn($br, $w) {
+    display: block;
+    margin: 0 auto;
+    padding: .5em 2em;
+    color: $text-color-lt;
+    background: $btn-primary;
+    font-size: inherit;
+    font-weight: inherit;
+    border-radius: $br;
+    width: $w;
+}

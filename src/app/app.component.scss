@@ -5,8 +5,10 @@
 @for $i from 1 through 12 {
     $w: ($i / 12) * 100%;
     .col-#{$i}-sm {
-        width: $w; 
-        float: left;
+        width: 100% - ($gutter-horizontal * 2); 
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
         border: 1px solid red;
     }
 }
@@ -22,7 +24,7 @@
 }
 
 .main-content {
-    padding: $gutter-vertical $gutter-horizontal;
+    // padding: $gutter-vertical $gutter-horizontal;
     text-align: center;
     // background: $bg-lt;
     
@@ -67,6 +69,7 @@
     display: flex;
     flex-flow: column wrap;
     padding: 1.5em;
+    margin: 0 $gutter-horizontal 4em;
 
     %shorten-element {
         width: 100%;
@@ -96,6 +99,93 @@
         color: $text-color-lt;
         background-color: $btn-primary;
     }
+}
+.stats {
+    padding-bottom: 4em;
+    background: $bg-lt;
+}
+.stats-header {
+    margin-bottom: 3em;
+    .title-dk {
+        font-size: 1.5em;
+    }
+}
+
+.stats-details {
+    
+    .stats-card {
+        background: $bg-wt;
+        border-radius: 5px;
+        .icon-container {
+            padding: 18px 20px;
+            background-color: $bg-dk;
+            border-radius: 50%;
+            width: fit-content;
+            margin: 0 auto;
+        }
+        .stats-icon {
+            background-color: $bg-dk;
+            border: none;
+        }
+        .title-dk {
+            font-size: 1.25em;
+        }
+        .stats-content {
+            padding: 1em;
+        }
+    }
+}
+
+.boost {
+    background-image: url("../assets/images/bg-boost-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: $bg-dk;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 4em 0;
+    .boost-text {
+        font-size: 1.33em;
+        font-weight: $heavy;
+        color: $heading-color-lt;
+        margin-bottom: 1em;
+    }
+    .btn {
+        font-size: 1.2em;
+    }
+}
+
+footer {
+    
+    background: $bg-footer;
+    text-align: center;
+    padding: 2.5em 0;
+    
+    .footer-logo {
+        width: fit-content;
+        padding-bottom: 2em;
+    }
+    .footer-section-title {
+        color: $text-color-lt;
+        font-weight: $heavy;
+        margin-bottom: 1em;
+    }
+    .footer-section-list {
+        margin-bottom: 1.5em;
+    }
+    .footer-section-list-item {
+        color: $text-color-gy;
+        line-height: 2em;
+    }
+    .social-icon {
+        margin: 0 .5em;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 

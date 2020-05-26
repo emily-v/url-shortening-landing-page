@@ -9,7 +9,7 @@
         margin: 0 auto;
         display: flex;
         flex-flow: column;
-        border: 1px solid red;
+        // border: 1px solid red;
     }
 }
 
@@ -59,6 +59,10 @@
 }
 
 .shorten-section {
+    background: linear-gradient($bg-wt 4.5em, $bg-lt 4.5em);
+    // ^ gray background starts ~halfway down section
+}
+.shorten-container {
     background-image: url("../assets/images/bg-shorten-mobile.svg");
     background-repeat: no-repeat;
     background-position-x: right;
@@ -97,13 +101,15 @@
         margin-top: 0;
         margin-bottom: 0;
         color: $text-color-lt;
-        background-color: $btn-primary;
+        background-color: $accent-primary;
     }
 }
 .stats {
     padding-bottom: 4em;
+    border: 1px solid $bg-lt; // prevents margin collapsing
     background: $bg-lt;
 }
+
 .stats-header {
     margin-bottom: 3em;
     .title-dk {
@@ -114,7 +120,7 @@
 .stats-details {
     
     .stats-card {
-        background: $bg-wt;
+        background: linear-gradient($bg-lt 2.25em, $bg-wt 2.25em);
         border-radius: 5px;
         .icon-container {
             padding: 18px 20px;
@@ -134,6 +140,13 @@
             padding: 1em;
         }
     }
+
+    .vertical-line {
+        height: 3em;
+        width: .5em;
+        background: $accent-primary;
+        margin: 0 auto;
+    }
 }
 
 .boost {
@@ -144,6 +157,7 @@
     display: flex;
     flex-flow: column wrap;
     padding: 4em 0;
+    border-bottom: 1px solid $bg-dk;
     .boost-text {
         font-size: 1.33em;
         font-weight: $heavy;
@@ -160,6 +174,7 @@ footer {
     background: $bg-footer;
     text-align: center;
     padding: 2.5em 0;
+    border-top: 1px solid $bg-dk;
     
     .footer-logo {
         width: fit-content;

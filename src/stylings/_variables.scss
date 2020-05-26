@@ -20,7 +20,7 @@ $bg-dk: $dark-violet;
 $bg-lt: $light-violet;
 $bg-wt: $white;
 $bg-footer: $very-dark-violet;
-$btn-primary: $cyan;
+$accent-primary: $cyan;
 
 $default-font-size: 18px;
 $default-font-family: 'Poppins', sans-serif;
@@ -36,7 +36,7 @@ $gutter-vertical: 8%;
     padding: .6em 1.5em;
     border: none;
     color: $text-color-lt;
-    background: $btn-primary;
+    background: $accent-primary;
     font-size: inherit;
     font-weight: inherit;
     border-radius: $br;

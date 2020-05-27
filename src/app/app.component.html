@@ -20,8 +20,12 @@
   
   <div class="shorten-section clearfix">
     <div class="shorten-container">
-      <input type="text" class="url-input" placeholder="Shorten a link here...">
-      <button type="submit" class="btn btn-square">Shorten It!</button>
+      <input 
+        type="text" 
+        class="url-input" 
+        [(ngModel)]="urlToShorten"
+        placeholder="Shorten a link here...">
+      <button type="button" class="btn btn-square" (click)="submitUrl()" >Shorten It!</button>
     </div>
   </div>
 

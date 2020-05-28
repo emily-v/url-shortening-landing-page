@@ -73,7 +73,7 @@
     display: flex;
     flex-flow: column wrap;
     padding: 1.5em;
-    margin: 0 $gutter-horizontal 4em;
+    margin: 0 $gutter-horizontal;
 
     %shorten-element {
         width: 100%;
@@ -104,7 +104,46 @@
         background-color: $accent-primary;
     }
 }
+
+.url-card-container {
+    background-color: $bg-lt;
+    padding-top: 1em;
+}
+.url-card {
+    margin: 0 $gutter-horizontal;
+    padding-bottom: 1em;
+    border-radius: 10px;
+    background-color: $bg-wt;
+    text-align: left;
+
+    .url-long {
+        padding: 1em;
+        border-bottom: 1px solid $accent-gy;
+        color: $heading-color-dk;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .url-short {
+        padding: 1em;
+        color: $accent-primary;
+    }
+    .btn {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        padding: .5em;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: $heavy;
+        color: $text-color-lt;
+        background-color: $accent-primary;
+    }
+}
+
 .stats {
+    padding-top: 4em;
     padding-bottom: 4em;
     border: 1px solid $bg-lt; // prevents margin collapsing
     background: $bg-lt;

@@ -30,10 +30,11 @@
   </div>
 
   <div class="url-card-container">
-    <div class="url-card">
-      <div class="url-long">https://github.com/emily-v?tab=repositories</div>
-      <div class="url-short">https://rel.ink/123ABC</div>
-      <button class="btn btn-square">Copy</button>
+    <div class="url-card" *ngFor="let url of urls">
+      <div class="url-long">{{ url.longUrl }}</div>
+      <div class="url-short">{{ url.shortUrl }}</div>
+      <button class="btn btn-square" *ngIf="!url.copied" (click)="copyUrl(url)">Copy</button>
+      <button class="btn btn-square btn-dk" *ngIf="url.copied">Copied!</button>
     </div>
   </div>
 

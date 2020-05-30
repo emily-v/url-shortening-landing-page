@@ -23,11 +23,10 @@ export class AppComponent {
 
   submitUrl() {
     if(!this.urlToShorten || this.urlToShorten.length < 1) {
-      alert('Enter a valid url to shorten');
+      this.showError();
       return;
     }
-    console.log(this.urlToShorten);
-
+    
     this.newShortUrl();
   }
 
@@ -38,18 +37,51 @@ export class AppComponent {
     this.postUrlRequest(request)
       .subscribe(
         (resp) => {
-          console.log('resp', resp);
           url.shortUrl = 'https://rel.ink/' + resp.hashid;
           this.urls.push(url);
         },
         (err) => {
           console.log('err', err)
+        },
+        () => {
+          this.reset();
         }
       );
   }
 
   copyUrl(url: Url) {
-    console.log(url);
+    let short = url.shortUrl;
+    navigator.clipboard.writeText(short);
+    this.setCopied(url);
+  }
+  
+  reset() {
+    this.urlToShorten = '';
+    this.clearCopied();
+  }
+
+  clearCopied() {
+    this.urls.forEach(url => url.copied = false);
+  }
+  
+  setCopied(copiedUrl) {
+    this.urls.forEach(url => {
+      if(url.shortUrl == copiedUrl.shortUrl) {
+        url.copied = true;
+      } else {
+        url.copied = false;
+      }
+    })
+  }
+
+  showError() {
+    document.querySelector('.url-input').classList.add('error-border');
+    document.querySelector('.error-text').classList.remove('hide-error');
+  }
+
+  clearError() {
+    document.querySelector('.url-input').classList.remove('error-border');
+    document.querySelector('.error-text').classList.add('hide-error');
   }
 
 

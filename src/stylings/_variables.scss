@@ -1,5 +1,3 @@
-$test-color: red;
-
 $cyan: hsl(180, 66%, 49%);
 $dark-violet: hsl(257, 27%, 26%);
 $red: hsl(0, 87%, 67%);
@@ -23,11 +21,14 @@ $bg-footer: $very-dark-violet;
 $accent-primary: $cyan;
 $accent-secondary: $dark-violet;
 $accent-gy: $grayish-violet;
+$error: $red;
 
 $default-font-size: 18px;
 $default-font-family: 'Poppins', sans-serif;
+$light: 300;
 $normal: 500;
 $heavy: 700;
+$italic: italic;
 
 $gutter-horizontal: 5%;
 $gutter-vertical: 8%;

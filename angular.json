@@ -121,8 +121,13 @@
               "devServerTarget": "url-shortening-landing-page:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "url-shortening-landing-page"
 }

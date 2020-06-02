@@ -13,8 +13,8 @@ Styled for both mobile and desktop (coming soon) without the help of external li
 This project is deployed to GitHubPages [here](https://emily-v.github.io/url-shortening-landing-page/).
 
 ### Deployment Tool
-angular-cli-ghpages
-(https://github.com/angular-schule/angular-cli-ghpages)
+angular-cli-ghpages 
+https://github.com/angular-schule/angular-cli-ghpages
 
 Using default GitHub user domain, deploy with command `ng deploy --base-href=/url-shortening-landing-page/`
 

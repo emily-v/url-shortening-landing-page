@@ -12,6 +12,11 @@
     }
 }
 
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
 .hero-img-container {
     width: 100% - $gutter-horizontal;
     overflow: hidden;
@@ -261,9 +266,20 @@ footer {
     clear: both;
 }
 
+// -- INTERMEDIATE SIZE STYLES --
+@media only screen and (min-width: 377px) {
+
+    .container {
+        border-left: 1px solid $bg-lt;
+        border-right: 1px solid $bg-lt;
+    }
+
+}
+
 
 // -- DESKTOP STYLES --
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 850px) {
+    
     @for $i from 1 through 12 {
         $w: ($i / 12) * 100%;
         .col-#{$i}-lg {
@@ -271,6 +287,10 @@ footer {
             float: left;
             border: 1px solid blue;
         }
+    }
+
+    .container {
+        max-width: unset;
     }
 
 }

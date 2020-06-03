@@ -88,9 +88,13 @@
             display: flex;
             align-items: center;
     
+            span {
+                margin-right: 1em;
+            }
+            
             .btn-pill {
                 @include btn(1.5em, 90%);
-                margin-top: 0;
+                
             }
         }
     }

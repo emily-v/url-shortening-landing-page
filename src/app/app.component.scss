@@ -280,6 +280,44 @@ footer {
 // -- DESKTOP STYLES --
 @media only screen and (min-width: 850px) {
     
+    .hero-img-container {
+        width: 45%;
+        float: right;
+        margin-bottom: 2em;
+    }
+    
+    .hero-description {
+        width: 50%;
+        text-align: left;
+        margin-left: $gutter-horizontal;
+
+        .title-dk {
+            font-size: 2.5em;
+            margin-bottom: 0;
+        }
+
+        .btn-pill {
+            width: 40%;
+            margin-left: 0;
+        }
+    }
+
+    .shorten-container {
+        width: 90%;
+        box-sizing: border-box;
+        flex-flow: row nowrap;
+
+        .url-input {
+            width: 80%;
+            margin: 0 1em 0 0;
+        }
+
+        .btn-square {
+            margin: 0;
+            width: 20%;
+        }
+    }
+    
     @for $i from 1 through 12 {
         $w: ($i / 12) * 100%;
         .col-#{$i}-lg {

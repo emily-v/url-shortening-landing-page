@@ -361,14 +361,32 @@ footer {
         .stats-details {
             margin: 0 5%;
         }
+
+        .stats-card {
+
+            .icon-container {
+                margin-left: 10%;
+            }
+
+            .stats-content {
+                text-align: left;
+                padding: 10%;
+
+                .title-dk {
+                    margin: .5em auto;
+                }
+            }
+        }
     }
     
     @for $i from 1 through 12 {
         $w: ($i / 12) * 100%;
         .col-#{$i}-lg {
-            width: $w; 
+            box-sizing: border-box;
+            width: $w - 4%;
+            margin: 0 2%; 
             float: left;
-            border: 1px solid blue;
+            // border: 1px solid blue;
         }
     }
 

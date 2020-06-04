@@ -302,6 +302,11 @@ footer {
         }
     }
 
+    .shorten-section {
+        background: linear-gradient(to top, $bg-lt 3em, $bg-wt 3em);
+        // ^ gray color starts n units from bottom of div
+    }
+
     .shorten-container {
         width: 90%;
         box-sizing: border-box;
@@ -315,6 +320,46 @@ footer {
         .btn-square {
             margin: 0;
             width: 20%;
+        }
+    }
+
+    .url-card {
+        display: flex;
+        margin-top: 2%;
+        padding: 1em;
+        text-align: unset;
+        align-items: center;
+
+        .url-long {
+            width: 55%;
+            border-bottom: none;
+            padding: 2px 0;
+            text-align: left;
+        }
+
+        .url-short {
+            width: 25%;
+            padding: 2px 0;
+            text-align: right;
+        }
+
+        .btn {
+            width: 15%;
+            display: inline-block;
+        }
+
+        // TODO fix .error-text positioning
+    }
+
+    .stats {
+        
+        .stats-header .text-content {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .stats-details {
+            margin: 0 5%;
         }
     }
     

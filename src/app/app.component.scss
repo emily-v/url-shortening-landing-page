@@ -195,6 +195,7 @@
         .stats-icon {
             background-color: $bg-dk;
             border: none;
+            width: 40px;
         }
         .title-dk {
             font-size: 1.25em;
@@ -360,10 +361,28 @@ footer {
 
         .stats-details {
             margin: 0 5%;
+            overflow: hidden;
+            position: relative;
+
+            .vertical-line {
+                display: none;
+            }
+
+            .horizontal-line {
+                height: .5em;
+                width: 80%;
+                position: absolute;
+                top: 40%;
+                left: 10%;
+                background-color: $accent-primary;
+                z-index: 1;
+            }
         }
 
         .stats-card {
 
+            position: relative;
+            z-index: 2;
             .icon-container {
                 margin-left: 10%;
             }
@@ -377,6 +396,18 @@ footer {
                 }
             }
         }
+
+        .stats-card:nth-child(3) {
+            margin-top: 2em;
+        }
+
+        .stats-card:nth-child(5) {
+            margin-top: 4em;
+        }
+    }
+
+    footer {
+        overflow: hidden;
     }
     
     @for $i from 1 through 12 {
@@ -386,7 +417,7 @@ footer {
             width: $w - 4%;
             margin: 0 2%; 
             float: left;
-            // border: 1px solid blue;
+            border: 1px solid blue;
         }
     }
 

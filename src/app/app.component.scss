@@ -240,8 +240,9 @@ footer {
     padding: 2.5em 0;
     border-top: 1px solid $bg-dk;
     
-    .footer-logo {
+    .footer-logo-container {
         width: fit-content;
+        margin: 0 auto;
         padding-bottom: 2em;
     }
     .footer-section-title {
@@ -294,12 +295,12 @@ footer {
 
         .title-dk {
             font-size: 2.5em;
-            margin-bottom: 0;
+            margin: 1.5em auto 0;
         }
 
         .btn-pill {
-            width: 40%;
             margin-left: 0;
+            width: 8.5em;
         }
     }
 
@@ -312,10 +313,12 @@ footer {
         width: 90%;
         box-sizing: border-box;
         flex-flow: row nowrap;
+        padding: 2em;
 
         .url-input {
             width: 80%;
             margin: 0 1em 0 0;
+            padding: .5em;
         }
 
         .btn-square {
@@ -339,14 +342,16 @@ footer {
         }
 
         .url-short {
-            width: 25%;
+            width: 200px;
+            margin: 0 0 0 auto;
             padding: 2px 0;
             text-align: right;
         }
 
         .btn {
-            width: 15%;
+            width: 130px;
             display: inline-block;
+            margin: 0 0 0 1em;
         }
 
         // TODO fix .error-text positioning
@@ -406,18 +411,36 @@ footer {
         }
     }
 
+    .boost {
+        .boost-text {
+            font-size: 1.5em;
+        }
+
+        .btn-pill {
+            width: 8.5em;
+        }
+    }
+
     footer {
         overflow: hidden;
+
+        .footer-section {
+            text-align: left;
+        }
+
+        .social-icons {
+            text-align: left;
+        }
     }
     
     @for $i from 1 through 12 {
         $w: ($i / 12) * 100%;
         .col-#{$i}-lg {
             box-sizing: border-box;
-            width: $w - 4%;
-            margin: 0 2%; 
+            width: $w - 3%;
+            margin: 0 1.5%; 
             float: left;
-            border: 1px solid blue;
+            // border: 1px solid blue;
         }
     }
 

@@ -294,13 +294,18 @@ footer {
         margin-left: $gutter-horizontal;
 
         .title-dk {
-            font-size: 2.5em;
+            font-size: 3.5em;
             margin: 1.5em auto 0;
+        }
+
+        .text-content {
+            font-size: 1.5em;
         }
 
         .btn-pill {
             margin-left: 0;
             width: 8.5em;
+            font-size: 1.25em;
         }
     }
 
@@ -314,6 +319,7 @@ footer {
         box-sizing: border-box;
         flex-flow: row nowrap;
         padding: 2em;
+        background-image: url("../assets/images/bg-shorten-desktop.svg");
 
         .url-input {
             width: 80%;
@@ -359,9 +365,16 @@ footer {
 
     .stats {
         
-        .stats-header .text-content {
-            width: 50%;
-            margin: 0 auto;
+        .stats-header {
+            .title-dk {
+                font-size: 2.5em;
+            }
+
+            .text-content {
+                width: 50%;
+                margin: 0 auto;
+                font-size: 1.25em;
+            }
         }
 
         .stats-details {
@@ -412,6 +425,7 @@ footer {
     }
 
     .boost {
+        background-image: url("../assets/images/bg-boost-desktop.svg");
         .boost-text {
             font-size: 1.5em;
         }

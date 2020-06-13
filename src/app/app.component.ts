@@ -96,6 +96,7 @@ export class AppComponent {
     return this.http.post('https://rel.ink/api/links/', JSON.stringify(url), this.httpOptions);
   }
 
+  // not in use
   getUrlInfoRequest(hash: string): Observable<any> {
     return this.http.get('https://rel.ink/api/links/' + hash);
   }

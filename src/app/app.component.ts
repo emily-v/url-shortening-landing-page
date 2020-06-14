@@ -101,5 +101,4 @@ export class AppComponent {
     return this.http.get('https://rel.ink/api/links/' + hash);
   }
 
-
 }

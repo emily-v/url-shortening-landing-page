@@ -253,6 +253,22 @@ footer {
     .social-icon:hover {
         color: $accent-primary;
     }
+
+    .footer-note {
+        color: $text-color-gy;
+        font-size: .8em;
+        line-height: 1.5em;
+        margin-top: 2em;
+
+        p {
+            padding-bottom: 1em;
+        }
+
+        a {
+            color: $accent-primary;
+            text-decoration: none;
+        }
+    }
 }
 
 .clearfix:after {
@@ -461,6 +477,11 @@ footer {
         }
 
         .social-icons {
+            text-align: left;
+        }
+
+        .footer-note {
+            padding: 0 .5em;
             text-align: left;
         }
     }

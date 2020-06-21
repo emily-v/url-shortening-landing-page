@@ -34,15 +34,28 @@ $italic: italic;
 $gutter-horizontal: 5%;
 $gutter-vertical: 8%;
 
-@mixin btn($br, $w) {
+// @mixin btn($br, $w) {
+//     display: block;
+//     margin: 0 auto;
+//     padding: .6em 1.5em;
+//     border: none;
+//     color: $text-color-lt;
+//     background: $accent-primary;
+//     font-size: inherit;
+//     font-weight: inherit;
+//     border-radius: $br;
+//     width: $w;
+// }
+
+@mixin btn($w) {
     display: block;
-    margin: 0 auto;
-    padding: .6em 1.5em;
     border: none;
+    padding: .6em 1.5em;
     color: $text-color-lt;
-    background: $accent-primary;
     font-size: inherit;
     font-weight: inherit;
-    border-radius: $br;
     width: $w;
 }
+
+
+

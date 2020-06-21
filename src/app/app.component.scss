@@ -41,9 +41,7 @@
         line-height: 1.75em;
     }
 
-    .btn-pill {
-        @include btn(1.5em, 50%);
-    }
+    
     
 }
 
@@ -57,6 +55,11 @@
     
     .text-content {
         margin-bottom: 1em;
+    }
+
+    .btn { // TODO refactor all btn's using mixin and global styles
+        @include btn(50%);
+        margin: 0 auto;
     }
 }
 
@@ -101,8 +104,8 @@
         @extend %shorten-element;
         margin-top: 1em;
         margin-bottom: 0;
-        color: $text-color-lt;
-        background-color: $accent-primary;
+        // color: $text-color-lt;
+        // background-color: $accent-primary;
     }
 
     .error-border {
@@ -145,7 +148,7 @@
         padding: 1em;
         color: $accent-primary;
     }
-    .btn {
+    .btn { // TODO refactor this with mixin
         width: 90%;
         margin: 0 auto;
         display: block;
@@ -483,7 +486,6 @@ footer {
             width: $w - 3%;
             margin: 0 1.5%; 
             float: left;
-            // border: 1px solid blue;
         }
     }
 

@@ -10,15 +10,6 @@ html {
     font-weight: $normal;
 }
 
-// @mixin btn($w) {
-//     display: block;
-//     border: none;
-//     color: $text-color-lt;
-//     font-size: inherit;
-//     font-weight: inherit;
-//     width: $w;
-// }
-
 .btn-pill {
     border-radius: 1.5em;
 }
@@ -34,5 +25,3 @@ html {
 .btn-dk {
     background-color: $accent-secondary;
 }
-
-
